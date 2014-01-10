@@ -19,6 +19,9 @@
 		5C487530185E73FE00031DB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C487518185E73FE00031DB1 /* UIKit.framework */; };
 		5C487538185E73FE00031DB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C487536185E73FE00031DB1 /* InfoPlist.strings */; };
 		5C48753A185E73FE00031DB1 /* toDoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C487539185E73FE00031DB1 /* toDoAppTests.m */; };
+		5C487545185E74EC00031DB1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C487544185E74EC00031DB1 /* TableViewController.m */; };
+		5C487548185E768B00031DB1 /* EditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C487547185E768B00031DB1 /* EditableCell.m */; };
+		5C48754A185E76A500031DB1 /* EditableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C487549185E76A500031DB1 /* EditableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		5C487535185E73FE00031DB1 /* toDoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toDoAppTests-Info.plist"; sourceTree = "<group>"; };
 		5C487537185E73FE00031DB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C487539185E73FE00031DB1 /* toDoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toDoAppTests.m; sourceTree = "<group>"; };
+		5C487543185E74EC00031DB1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5C487544185E74EC00031DB1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5C487546185E768B00031DB1 /* EditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCell.h; sourceTree = "<group>"; };
+		5C487547185E768B00031DB1 /* EditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCell.m; sourceTree = "<group>"; };
+		5C487549185E76A500031DB1 /* EditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,11 @@
 				5C487524185E73FE00031DB1 /* AppDelegate.m */,
 				5C487526185E73FE00031DB1 /* Images.xcassets */,
 				5C48751B185E73FE00031DB1 /* Supporting Files */,
+				5C487543185E74EC00031DB1 /* TableViewController.h */,
+				5C487544185E74EC00031DB1 /* TableViewController.m */,
+				5C487546185E768B00031DB1 /* EditableCell.h */,
+				5C487547185E768B00031DB1 /* EditableCell.m */,
+				5C487549185E76A500031DB1 /* EditableCell.xib */,
 			);
 			path = toDoApp;
 			sourceTree = "<group>";
@@ -221,6 +234,7 @@
 			files = (
 				5C48751F185E73FE00031DB1 /* InfoPlist.strings in Resources */,
 				5C487527185E73FE00031DB1 /* Images.xcassets in Resources */,
+				5C48754A185E76A500031DB1 /* EditableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C487525185E73FE00031DB1 /* AppDelegate.m in Sources */,
+				5C487545185E74EC00031DB1 /* TableViewController.m in Sources */,
 				5C487521185E73FE00031DB1 /* main.m in Sources */,
+				5C487548185E768B00031DB1 /* EditableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,9 +377,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toDoApp/toDoApp-Prefix.pch";
 				INFOPLIST_FILE = "toDoApp/toDoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,9 +392,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toDoApp/toDoApp-Prefix.pch";
 				INFOPLIST_FILE = "toDoApp/toDoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
